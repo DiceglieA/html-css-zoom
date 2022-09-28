@@ -16,8 +16,17 @@ body {
 }
 
 header {
-    flex-direction: row-reverse;
     height: 50px;
+}
+
+header > div {
+    flex-direction: row-reverse;
+}
+
+.header-btn {
+    background-color: rgba(103, 115, 124, .7);
+    margin-right: 0.5em;
+    padding: 0.2em;
 }
 
 footer {
@@ -28,14 +37,9 @@ footer {
 main {
     height: calc(100vh - 100px);
     flex-wrap: wrap;
-    gap: 0.5em;
+    gap: 0.3em;
     overflow-y: auto;
     justify-content: center;
-    
-    margin-left: 5%;
-    margin-right: 5%;
-    
-    
 }
 
 
@@ -45,6 +49,17 @@ main {
 
 .img {
     flex-basis: 13%;
-    flex-grow: 1;
+    flex-grow: 1;position: relative;
+
 }
+
+.nick {
+    position: absolute;
+    bottom: 0.2em;
+    left: 0;
+    padding: 0.2em;
+    font-size: 13px;
+    background-color: rgba(103, 115, 124, .7);
+}
+
 
